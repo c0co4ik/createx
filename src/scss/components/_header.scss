@@ -1,0 +1,11 @@
+.header{
+  padding: 23px 0 21px;
+
+  &--main{
+    background-color: var(--light-color);
+  }
+
+  &__container{
+    @include flex-all-sb;
+  }
+}

@@ -1,0 +1,21 @@
+.nav{
+  margin-right: 110px;
+
+
+  &__list{
+    @include flex-v-center;
+  }
+
+  &__item{
+    &:not(:last-child){
+      margin-right: 41px;
+    }
+  }
+
+  &__link{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray800-color);
+  }
+}
