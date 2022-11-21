@@ -1,0 +1,62 @@
+.mission{
+  background-color: var(--light-color);
+
+  &__list{
+    --mission-gap: 94px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc(var(--mission-gap) * 2);
+  }
+
+  &__item{
+    padding-top: 72px;
+    text-align: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 48px 48px;
+    background-position: top center;
+
+    &:not(:last-child){
+      &::after{
+        content: '';
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        right: calc(-1 * var(--mission-gap));
+        top: 0;
+        background-image: url('../img/divider.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &--quality{
+      background-image: url('../img/quality.svg');
+    }
+    &--safety{
+      background-image: url('../img/safety.svg');
+    }
+    &--comfort{
+      background-image: url('../img/comfort.svg');
+    }
+  }
+
+  &__subtitle{
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray900-color);
+  }
+
+  &__descr{
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray700-color);
+  }
+}
