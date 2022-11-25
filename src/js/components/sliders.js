@@ -61,3 +61,11 @@ document.querySelector('.portfolio-section__next').addEventListener('click', () 
   nextNextActiveSlide.classList.add('slider-visible')
 })
 
+const testimonialsSlider = new Swiper('.testimonials__items', {
+  spaceBetween: gap,
+  loop: true,
+  navigation: {
+    nextEl: '.testimonials__next',
+    prevEl: '.testimonials__prev'
+  }
+});
