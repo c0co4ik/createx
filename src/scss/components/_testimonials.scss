@@ -1,5 +1,4 @@
 .testimonials{
-  padding-bottom: 121px;
   background-color: var(--gray200-color);
 
   &__container{
@@ -24,6 +23,10 @@
     position: absolute;
     right: 0;
     bottom: 0;
+  }
+
+  &__img{
+    margin-bottom: -60px;
   }
 }
 
