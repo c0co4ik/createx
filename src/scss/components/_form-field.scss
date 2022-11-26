@@ -18,6 +18,12 @@
     height: 44px;
     padding: 0 13px;
 
+    &--big{
+      padding-top: 10px;
+      resize: none;
+      height: 66px;
+    }
+
     &::placeholder{
       font-size: 14px;
       line-height: 150%;
@@ -30,6 +36,15 @@
 
     .form-field__input{
       width: 100%;
+    }
+  }
+
+  &--gray{
+    width: 100%;
+
+    .form-field__input{
+      width: 100%;
+      background-color: var(--gray200-color);
     }
   }
 }
