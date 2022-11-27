@@ -126,6 +126,13 @@ a {
     line-height: 44px;
   }
 
+  &__small{
+    padding: 0 24px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 36px;
+  }
+
   &--orange{
     color: var(--light-color);
     background-color: var(--primary-color);
