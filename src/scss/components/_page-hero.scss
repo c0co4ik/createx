@@ -3,11 +3,15 @@
   max-height: 600px;
   background-color: var(--gray200-color);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 
   &--main{
     background-image: url('../img/hero-services-bg.jpg');
+    background-position: center;
+  }
+
+  &--interior{
+    background-image: url('../img/interior-bg.jpg');
+    background-position: right -28px bottom;
   }
 
   &__title{
