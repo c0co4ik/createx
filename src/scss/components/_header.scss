@@ -5,6 +5,13 @@
     background-color: var(--light-color);
   }
 
+  &--secondary{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
   &__container{
     @include flex-all-sb;
   }

@@ -1,0 +1,32 @@
+.breadcrumbs{
+  display: flex;
+  align-items: center;
+  margin-bottom: 42px;
+
+  &__item{
+    position: relative;
+    &:not(:last-child){
+      margin-right: 22px;
+
+      &::after{
+        content: "/";
+        position: absolute;
+        top: 0;
+        right: -14px;
+        font-size: 14px;
+        line-height: 150%;
+        color: var(--gray600-color);
+      }
+    }
+  }
+
+  &__link{
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray800-color);
+
+    &:not([href]){
+      color: var(--gray600-color);
+    }
+  }
+}

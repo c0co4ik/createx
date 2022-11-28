@@ -1,0 +1,27 @@
+.page-hero{
+  padding: 152px 0 179px;
+  max-height: 600px;
+  background-color: var(--gray200-color);
+  background-image: url('../img/hero-services-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__title{
+    margin: 0;
+    margin-bottom: 22px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 130%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--gray900-color);
+  }
+
+  &__descr{
+    margin: 0;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray700-color);
+  }
+}
