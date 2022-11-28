@@ -2,10 +2,13 @@
   padding: 152px 0 179px;
   max-height: 600px;
   background-color: var(--gray200-color);
-  background-image: url('../img/hero-services-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  &--main{
+    background-image: url('../img/hero-services-bg.jpg');
+  }
 
   &__title{
     margin: 0;
