@@ -1,9 +1,10 @@
 const bodyStyles = window.getComputedStyle(document.body);
 const gap = parseInt(bodyStyles.getPropertyValue('--grid-gap'));
 const portSlider = document.querySelector('.portfolio-section__items')
+  import Swiper, { Navigation } from 'swiper';
+  Swiper.use([Navigation]);
 
-import Swiper, { Navigation } from 'swiper';
-Swiper.use([Navigation]);
+if (portSlider){
 const portfolioSlider = new Swiper(portSlider, {
   slidesPerView: 3,
   spaceBetween: gap,
@@ -60,6 +61,9 @@ document.querySelector('.portfolio-section__next').addEventListener('click', () 
   nextActiveSlide.classList.add('slider-visible')
   nextNextActiveSlide.classList.add('slider-visible')
 })
+}
+
+
 
 const testimonialsSlider = new Swiper('.testimonials__items', {
   spaceBetween: gap,
