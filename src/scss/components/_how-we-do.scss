@@ -1,0 +1,62 @@
+.how-we-do{
+  padding-bottom: 121px;
+  background-color: var(--light-color);
+
+  &__title{
+    margin-bottom: 60px;
+  }
+
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--grid-gap);
+    counter-reset: section;
+  }
+
+  &__item{
+    position: relative;
+    grid-column: 3 span;
+
+    &::before{
+      counter-increment: section;
+      content: "0"counter(section);
+      margin-bottom: 14px;
+      display: inline-block;
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 130%;
+      color: var(--gray400-color);
+    }
+
+    &:not(:last-child){
+      &::after{
+        content: "";
+        width: 74%;
+        height: 1px;
+        position: absolute;
+        top: 27px;
+        right: 0;
+        background-image: url('../img/how-we-do-line.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+
+  &__subtitle{
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray900-color);
+  }
+
+  &__descr{
+    margin: 0;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray700-color);
+  }
+}
