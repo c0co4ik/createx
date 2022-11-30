@@ -1,0 +1,118 @@
+.pricing{
+  padding-top: 80px;
+  padding-bottom: 41px;
+  background-color: var(--gray200-color);
+  background-image: url('../img/pricing-bg.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position: left -28px top;
+}
+
+.table-wrapper{
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  background-color: var(--light-color);
+  border-radius: 4px;
+  border: 1px solid var(--gray300-color);
+  box-shadow:
+    0 80px 80px -20px rgba(154, 156, 165, 0.08),
+    0 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0 4px 4px -4px rgba(30, 33, 44, 0.03);
+}
+
+.table{
+  border-collapse: collapse;
+  width: 100%;
+
+  &__th{
+    padding: 32px 0;
+    padding-bottom: 26px;
+    padding-right: 17px;
+
+    &:first-child{
+      padding-left: 24px;
+      vertical-align: bottom;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      color: var(--gray900-color);
+      text-align: left;
+    }
+  }
+
+  &__heading{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--gray900-color);
+    text-transform: uppercase;
+  }
+
+  &__per{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--gray700-color);
+  }
+
+  &__text{
+
+  }
+
+  &__body &__row{
+    &:nth-child(odd){
+      background-color: var(--gray200-color);
+    }
+
+    &:last-child{
+      .table__col{
+        padding-top: 34px;
+        padding-bottom: 31px;
+      }
+    }
+  }
+
+  &__col{
+    padding: 16px 0;
+    padding-right: 7px;
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray800-color);
+    text-align: center;
+
+    &:first-child{
+      padding-left: 24px;
+      text-align: left;
+    }
+  }
+
+  &__text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray800-color);
+  }
+
+  &__check{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    font-size: 0;
+    background-image: url('../img/table-check.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__btn{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 34px;
+    padding: 0 23px;
+  }
+}
