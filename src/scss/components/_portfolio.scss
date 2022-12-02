@@ -1,0 +1,109 @@
+.portfolio{
+  padding-bottom: 99px;
+
+  &-more{
+    display: inline-flex;
+    align-items: center;
+    margin-top: 60px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray800-color);
+
+    svg{
+      margin-right: 16px;
+      width: 24px;
+      height: 24px;
+      color: inherit;
+      fill: currentColor;
+      object-fit: cover;
+    }
+  }
+}
+
+.portfolio-tabs-nav{
+  --gap: 20px;
+  transform: translateY(-60px);
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+
+  &__item{
+    width: calc((100% - (var(--gap) * 4)) / 5);
+
+    &:not(:last-child){
+      margin-right: var(--gap);
+    }
+
+  }
+
+  &__btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 154px;
+    padding: 33px 0;
+    border-radius: 4px;
+    box-shadow:
+      0 80px 80px -20px rgba(154, 156, 165, 0.08),
+      0 30px 24px -10px rgba(154, 156, 165, 0.05),
+      0 12px 10px -6px rgba(154, 156, 165, 0.04),
+      0 4px 4px -4px rgba(30, 33, 44, 0.03);
+    background-color: var(--light-color);
+    color: var(--primary-color);
+    transition: color 0.3s ease-in-out, background-color 0,3s ease-in-out;
+
+    &--active{
+      color: var(--light-color);
+      background-color: var(--primary-color);
+      pointer-events: none;
+
+      .portfolio-tabs-nav__text{
+        color: var(--light-color);
+      }
+    }
+
+  }
+
+  &__icon{
+    display: block;
+    margin-bottom: 16px;
+    width: 48px;
+    height: 48px;
+    color: inherit;
+    fill: currentColor;
+    object-fit: cover;
+    position: relative;
+    pointer-events: none;
+  }
+
+  &__text{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    color: var(--gray600-color);
+    transition: color 0.3s ease-in-out;
+    pointer-events: none;
+  }
+}
+
+.portfolio-tabs{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gap);
+
+  &__item{
+    display: none;
+    grid-column: 4 span;
+
+    &--visible{
+      display: block;
+    }
+
+    &--visible-more{
+      display: block !important;
+    }
+  }
+}
