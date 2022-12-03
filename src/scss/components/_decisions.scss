@@ -1,0 +1,51 @@
+.decisions{
+  padding-top: 80px;
+  background-color: var(--gray200-color);
+
+  &__container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--grid-gap);
+  }
+
+  &__left{
+    grid-column: 5 span;
+
+    img{
+      margin-bottom: -64px;
+    }
+  }
+
+  &__right{
+    padding-left: 103px;
+    grid-column: 7 span;
+  }
+
+  &__title{
+    margin: 0;
+    margin-bottom: 60px;
+  }
+
+  &__item{
+    padding-left: 38px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    position: relative;
+    color: var(--gray800-color);
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 2px;
+      width: 20px;
+      height: 20px;
+      background-image: url('../img/decisions-check.svg');
+    }
+
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+  }
+}
