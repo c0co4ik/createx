@@ -133,3 +133,10 @@ const testimonialsSlider = new Swiper('.testimonials__items', {
     prevEl: '.testimonials__prev'
   }
 });
+
+
+
+
+
+
+

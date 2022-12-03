@@ -4,12 +4,16 @@
   background-color: var(--gray200-color);
   background-repeat: no-repeat;
 
+  &--notmaxheight{
+    max-height: none;
+  }
+
   &--main{
     background-image: url('../img/hero-services-bg.jpg');
     background-position: center;
   }
 
-  &--interior{
+  &--services-inner{
     background-image: url('../img/interior-bg.png');
     background-position: right -28px bottom;
   }
@@ -17,6 +21,13 @@
   &--work{
     background-image: url('../img/work-bg.png');
     background-position: right -29px bottom;
+  }
+
+  &--work-inner{
+    background-color: var(--light-color);
+    background-image: url('../img/work-inner-bg.png');
+    background-position: top 48px right -28px;
+    padding-bottom: 40px;
   }
 
   &__title{
@@ -28,6 +39,16 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--gray900-color);
+
+    &--small{
+      font-size: 64px;
+      line-height: 120%;
+      text-transform: initial;
+    }
+
+    &--mb{
+      margin-bottom: 58px;
+    }
   }
 
   &__descr{

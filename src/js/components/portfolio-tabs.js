@@ -4,7 +4,9 @@ const portfolioTabsItems = document.querySelectorAll('.portfolio-tabs__item');
 const loadMore = document.querySelector('.portfolio-more');
 const portfolioTabsItemsVisible = document.querySelectorAll('.portfolio-tabs__item--visible');
 const maxItems = 9;
-const isLoadMoreNeeded = (selector) => {
+
+if(portfolioTabsNav){
+  const isLoadMoreNeeded = (selector) => {
   if(selector.length <= maxItems) {
     loadMore.style.display = 'none'
 
@@ -78,3 +80,5 @@ loadMore.addEventListener('click', (e) => {
     loadMore.style.display = 'none';
   }
 })
+}
+
