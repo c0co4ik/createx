@@ -30,6 +30,11 @@
     padding-bottom: 40px;
   }
 
+  &--about{
+    background-image: url('../img/about-bg.png');
+    background-position: right;
+  }
+
   &__title{
     margin: 0;
     margin-bottom: 22px;

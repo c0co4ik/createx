@@ -45,7 +45,6 @@
     "node-w3c-validator": "^2.0.1",
     "postcss": "^8.4.5",
     "postcss-scss": "^4.0.2",
-    "project-snippets": "^0.4.0",
     "sass": "^1.45.1",
     "stylelint": "^14.2.0",
     "stylelint-config-standard-scss": "^3.0.0",

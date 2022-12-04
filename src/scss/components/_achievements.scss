@@ -1,0 +1,133 @@
+.achievements{
+  padding-top: 121px;
+  padding-bottom: 110px;
+  &__list{
+    margin-bottom: 260px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--grid-gap);
+  }
+
+  &__item{
+    padding-top: 69px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 3 span;
+    background-size: 48px 48px;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    &--like{
+      background-image: url('../img/like.png');
+    }
+
+    &--painting{
+      background-image: url('../img/painting.png');
+    }
+
+    &--helmet{
+      background-image: url('../img/helmet.png');
+    }
+
+    &--pantone{
+      background-image: url('../img/pantone.png');
+    }
+  }
+
+  &__value{
+    margin-bottom: 9px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    color: var(--primary-color);
+  }
+
+  &__text{
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray900-color);
+  }
+
+  &__content{
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__info{
+    position: relative;
+    top: -140px;
+    left: -31px;
+    z-index: 10;
+    padding: 80px 82px 61px;
+    padding-right: 40px;
+    width: 735px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    box-shadow:
+      0 80px 80px -20px rgba(154, 156, 165, 0.08),
+      0 30px 24px -10px rgba(154, 156, 165, 0.05),
+      0 12px 10px -6px rgba(154, 156, 165, 0.04),
+      0 4px 4px -4px rgba(30, 33, 44, 0.03);
+    background-color: var(--light-color);
+  }
+}
+
+.quote{
+  &__content{
+    position: relative;
+    padding: 7px 14px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--gray900-color);
+    margin-bottom: 27px;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: -45px;
+      width: 28px;
+      height: 20px;
+      background-image: url('../img/braces.svg');
+
+    }
+
+    p{
+      margin: 0;
+      margin-bottom: 27px;
+    }
+  }
+
+  &__footer{
+    position: relative;
+    padding: 0 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--gray700-color);
+
+    &::after{
+      content: '';
+      position: absolute;
+      top: -10px;
+      right: 25px;
+      width: 100px;
+      height: 68px;
+      background-image: url('../img/signature.svg');
+    }
+  }
+
+  &__author{
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray900-color);
+  }
+
+}
